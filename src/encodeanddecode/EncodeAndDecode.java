@@ -5,7 +5,6 @@ package encodeanddecode;
 
 import my.gui.GUI;
 import java.util.Scanner;
-import org.jasypt.util.text.BasicTextEncryptor;
 
 public class EncodeAndDecode {
     

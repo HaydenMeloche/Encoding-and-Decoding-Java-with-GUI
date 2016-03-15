@@ -36,7 +36,7 @@ public class Calculation {
         String text = UserInput;
         System.out.printf("Text to be encoded is: %s \n", text);
         String encrypted = bte.encrypt(text);
-        System.out.printf("Encoded string is: %s \n", encrypted);
+        System.out.printf("Encoded string is!: %s \n", encrypted);
         EncrypteMe = encrypted;
         return encrypted;
          
@@ -47,9 +47,8 @@ public class Calculation {
     }
     
     public String decode(String DecodeMe) {
-        String encrypt = EncrypteMe;
-        String original = bte.decrypt(encrypt);
-        System.out.printf("Decrypted String is: %s \n", EncrypteMe);
+        String original = bte.decrypt(DecodeMe);
+        System.out.printf("Decrypted String is: %s \n", original);
         return original;
     }
 }
