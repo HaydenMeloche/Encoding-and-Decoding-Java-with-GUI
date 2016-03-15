@@ -129,25 +129,26 @@ public class GUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    String encoded; //Encoded text
+    String decoded; //Decoded text
+    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         System.out.print("Decoding intialized \n");
-        Calculation calc = new Calculation();
-        calc.decode(encoded);
+        System.out.print("Decoded: " + decoded);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jButton2ActionPerformed
-    String encoded;
+
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         Calculation calc =  new Calculation();
         String UserInput = InputBox.getText();
         System.out.printf("User input = %s \n", UserInput);
         calc.setPass();
+        //Encodes and decodes text
         encoded = calc.encode(UserInput);
-        
-                System.out.println(encoded);
+        decoded = calc.decode(encoded);
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
