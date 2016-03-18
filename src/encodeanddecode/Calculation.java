@@ -1,4 +1,3 @@
-
 package encodeanddecode;
 import javax.swing.JTextArea;
 import my.gui.GUI;
@@ -19,9 +18,23 @@ public class Calculation {
         //Used for testing
         System.out.println("It works!");
     }
-
+    
+    public boolean dataValidation(String UserInput) {
+        boolean x = UserInput.isEmpty();
+        return x;
+    }
+    
+    public boolean passValidation(String UserPass) {
+        boolean x = UserPass.isEmpty();
+        return x;
+    }
+    
     public void setPass() {
         bte.setPassword(password);
+    }
+    
+    public void setPass(String UserPass) {
+        bte.setPassword(UserPass);
     }
     
      String EncrypteMe;
